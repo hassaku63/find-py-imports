@@ -32,8 +32,7 @@ python -m pip install .
 By installing this repositoty as a python package, you can use `find_py_imports` command.
 
 ```plain
-find_py_imports -h
-usage: import-finder [-h] [-n] [--hide-syntax-error] [--print-file-not-found-error] [file ...]
+usage: find_py_imports [-h] [-n] [--hide-syntax-error] [--print-file-not-found-error] [file ...]
 
 positional arguments:
   file                  filename(s)

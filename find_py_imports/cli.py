@@ -15,7 +15,7 @@ class _Err(TypedDict):
 
 
 def main():
-    parser = argparse.ArgumentParser(prog='import-finder')
+    parser = argparse.ArgumentParser()
 
     parser.add_argument('-n', '--line-number', action='store_true', dest='show_line_number',
         help='show line number')
