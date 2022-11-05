@@ -66,6 +66,24 @@ import os
 from datetime import datetime
 ```
 
+`find_py_imports` detects import statements that span multiple lines,
+shows output one line import statement per one package imported
+
+```bash
+echo "import os, \
+    sys
+from datetime import (
+    datetime,
+    timedelta
+)" > a.py
+
+find_py_imports a.py
+# >>> import os
+# >>> import sys
+# >>> from datetime import datetime, timedelta
+```
+
+
 `find_py_imports` shows "<filename>:" prefix at output if input is given multiple files
 
 ```bash
